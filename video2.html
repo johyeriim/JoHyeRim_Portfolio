@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>오래오래 라이프페어 Video</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper {
+            width: 1280px;
+            margin: 50px auto;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        body {
+            background-color: #ffe0e7;
+            font-family: 'NanumSquareNeo';
+        }
+
+        #wrapper iframe {
+            width: 1280px;
+            height: 720px;
+        }
+
+        .fixed_box {
+            position: fixed;
+            bottom: 40px;
+            right: 30px;
+            width: 40px;
+        }
+
+        .home_btn,
+        .top_btn {
+            display: inline-block;
+            width: 55px;
+            line-height: 55px;
+            background-color: #ff7b97;
+            text-align: center;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            color: #fff;
+            transition: all 0.5s;
+        }
+
+        .fixed_box a:hover {
+            background-color: #77e5df;
+        }
+
+        @media (max-width:1320px) {
+            #wrapper {
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+                height: 0;
+                padding-bottom: 56.25%;
+            }
+
+            #wrapper video {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="video_banner">
+            <video src="./video/brand_vidoe.mp4" autoplay muted loop playsinline width="1280" height="720"></video>
+        </div>
+        <div class="fixed_box">
+            <a href="./index.html" class="home_btn">
+                Home
+            </a>
+        </div>
+
+
+
+
+
+</body>
+
+</html>
